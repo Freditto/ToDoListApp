@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:background="@color/material_yellow_a700">
+
+    <RelativeLayout
+        android:id="@+id/topRelative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp">
+
+
+    <ImageView
+        android:id="@+id/sitImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sitting"
+        />
+
+    <TextView
+        android:id="@+id/titleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stay Home\nTo Do List"
+        android:layout_toRightOf="@id/sitImg"
+        android:layout_marginLeft="16dp"
+        android:textSize="20sp"
+        android:textColor="@color/material_black_text"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/centertitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jipangie\nKazi"
+        android:textSize="50sp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/material_black_text"
+        />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/material_black_text"
+        android:layout_below="@id/centertitle"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bottomRelative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp">
+
+
+        <ImageView
+            android:id="@+id/progImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/prog"
+            android:layout_toRightOf="@id/titleTxtprog"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/titleTxtprog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keep On\nProgramming"
+            android:textSize="20sp"
+            android:textColor="@color/material_black_text"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

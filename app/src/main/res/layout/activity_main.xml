@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/aboverelativeview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/datetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="date"
+            android:textColor="@color/material_black_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/menuimg"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"/>
+
+        <TextView
+            android:id="@+id/nametxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mambo, Fred"
+            android:textColor="@color/material_black_text"
+            android:textSize="18sp"
+            android:layout_below="@id/datetxt"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/subtitletxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pendekeza kazi ya nyumbani\nkwa siku ya leo"
+            android:textColor="@color/material_black_text"
+            android:textSize="18sp"
+            android:layout_below="@id/nametxt"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/slogantxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Always remember! Smart is a new reach"
+            android:textColor="@color/material_black_text"
+            android:layout_below="@id/subtitletxt"
+            android:layout_marginTop="16dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/laghimg"
+            android:layout_below="@id/subtitletxt"
+            android:layout_toRightOf="@id/slogantxt"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="6dp"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lstTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aboverelativeview"
+        android:layout_marginTop="16dp"
+         />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:backgroundTint="@color/material_yellow_a700"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/addimg"
+        />
+</RelativeLayout>

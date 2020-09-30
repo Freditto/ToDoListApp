@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/taskleftImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/taskximg"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:id="@+id/tasktitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Task"
+        android:layout_toRightOf="@id/taskleftImg"
+        android:layout_marginLeft="6dp"
+        />
+
+    <ImageView
+        android:id="@+id/btndelete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/deleteimg"
+        android:onClick="deleteTask"
+        android:text="delete"
+        android:layout_marginRight="16dp"/>
+
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/taskleftImg"
+        android:layout_below="@id/tasktitle"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="6dp"
+        />
+</RelativeLayout>
